@@ -1,5 +1,7 @@
 # Move 37
 
+![move_37_image](https://www.theschool.ai/wp-content/uploads/2018/09/Screen-Shot-2018-09-05-at-3.51.48-PM.png)
+
 I am attending Siraj's Move 37 course through the School of AI. This repository contains my notes as I work through his course.
 
 #### Course Links
