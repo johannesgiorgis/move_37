@@ -167,6 +167,25 @@ _Question 5_:
 
 
 ### iPhone XS Supply Chain
+Apple just announced its new iPhone XS so expect the demand for it to be massive! We can use a special reinforcement learning algorithm called policy iteration to help Apple manage it's retail inventory and make sure that the demand meets supply, I’ll explain how in this video. We'll assume the role of an AI savvy retail manager for Apple in San Francisco and discuss policy iteration as a solution to our problem. Dynamic programming and real world use cases, enjoy!
+
+**Take Aways**:
+- In Dynamic Programming, Policy Iteration is a modification of Value Iteration to directly compute the Optimal Policy for a given Markov Decision Process
+- Policy Iteration consists of 2 steps:
+    + Policy Evaluation
+    + Policy Improvement
+- While Value Iteration is a simpler algorithm than Policy Iteration, its more computationally expensive
+
+
+**Learning Resources**:  
+- [Youtube Video](https://www.youtube.com/watch?v=XiN9Hx3Y6TA)
+- [Code Link](https://github.com/llSourcell/iphone_xs_supply_chain)
+- [Deep Reinforcement Learning Demystified](https://medium.com/@m.alzantot/deep-reinforcement-learning-demysitifed-episode-2-policy-iteration-value-iteration-and-q-978f9e89ddaa)
+- [Art Int - Policy Iteration](https://artint.info/html/ArtInt_228.html)
+- [Planning: Policy Evaluation, Policy Iteration, Value Iteration](http://kvfrans.com/planning-policy-evaluation-policy-iteration-value-iteration/)
+- [How is Policy Iteration different from Value Iteration?](https://www.quora.com/How-is-policy-iteration-different-from-value-iteration)
+- [Value Iteration and Policy Iteration](http://www.inf.ed.ac.uk/teaching/courses/rl/slides15/rl08.pdf)
+
 
 
 ### Kaggle Challenge (Live Stream)
