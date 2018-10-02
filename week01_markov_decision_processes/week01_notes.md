@@ -11,7 +11,7 @@ Welcome to my new reinforcement learning course titled Move 37! in this 10 week 
 **Learning Resources**:
 - [Youtube Video](https://www.youtube.com/watch?time_continue=615&v=fRmZck1Dakc)
 - [Code Link](https://github.com/llSourcell/Introduction_Move37)
-- [Reinforcement Learning Demystified](https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-1-bf00dda41690)
+- [Reinforcement Learning Demystified Part 1](https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-1-bf00dda41690)
 - [Lecture: Markov Decision Processes](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf)
 - [An Introduction to Markov Decision Processes](https://www.cs.rice.edu/~vardi/dag01/givan1.pdf)
 - [Markov Decision Processes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-825-techniques-in-artificial-intelligence-sma-5504-fall-2002/lecture-notes/Lecture20FinalPart1.pdf)
@@ -71,6 +71,7 @@ _Key Terms:_
 ![reward_model_equation](https://www.theschool.ai/wp-content/uploads/2018/09/Picture3-600x58.png)
 - **?**: discount favor. This factor is a numerical value between 0 and 1 that represents the relative importance between immediate and future rewards. I.e, If the agent has to select between two actions one of them will give it a high immediate reward immediately after performing the action but will lead into going to state from which the agents expect to get less future rewards than another state that can be reached after doing an action with less immediate reward?
 
+
 ### Value Functions Quiz
 
 1. What is a Value function?
@@ -94,8 +95,8 @@ _Key Terms:_
     - **Explanation**: ? : Discount factor for rewards. This factor is a numerical value between 0 and 1. The larger the factor, the smaller the discount. Some may perceive this to mean that the learning agent cares more about the long term reward. The smaller the factor, the bigger the discount. Some may perceive this to mean that the agent cares more about the short term reward. Discount factor has little to do with proximity of high and low reward regions but everything to do with prioritization of closer (in time) rewards. In other words, discount factor works as an ‘urgency of life in real world’  where some humans live as if the world is going to come to an end while some are relaxed. In addition, discount factor is meant to help with computational resources’ numerical limitations. If rewards grow exponentially and are not bounded, then their discounted sum (or value function) does not converge. Computers in general cannot handle arbitrarily big numbers.
 
 
-
 ### Homework Assignment - OpenAI Gym Installation
+Look at hw01/ directory.
 
 
 ### Sensor Networks
