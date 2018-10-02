@@ -11,7 +11,7 @@
 [Youtube Video](https://www.youtube.com/watch?v=FsOmL4sQJxo)
 
 **Markov Decision Process**
-- We are in a State. We choose an Action. Now there are several possibile S' states we could end up in based on random probability.
+- We are in a State. We choose an Action. Now there are several possible S' states we could end up in based on random probability.
 - Each possible State transition from an Action has an exact probability and all the probabilities add to 1.
 - The Markov Property states that the probability of future transitions depends only on the present. The past doesn't matter.
 
