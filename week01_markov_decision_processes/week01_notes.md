@@ -1,6 +1,6 @@
 # Week 01 Notes - Markov Decision Processes
 
-## Introduction (Move 37)
+### Introduction (Move 37)
 [Youtube Video](https://www.youtube.com/watch?time_continue=615&v=fRmZck1Dakc)
 
 - In Reinforcement Learning, an AI learns how to optimally interact in a real-time environment using time-delayed labels, called rewards as signal
@@ -8,7 +8,7 @@
 - Through interacting with the environment, an AI will learn a Policy which will return an Action for a given State with the highest Reward
 
 
-## The Bellman Equation
+### The Bellman Equation
 [Youtube Video](https://www.youtube.com/watch?time_continue=68&v=JMpslE8GtCo)
 
 **Important Bellman Concepts**
@@ -33,14 +33,14 @@ A class of algorithms which seek to simplify complex problems by breaking them u
 ![V(s) = max_a(R(s, a) + y * V(s'))](https://cdn-images-1.medium.com/max/800/1*f69zoIX-v1tWPRESXQQQhQ.png)
 
 _Gamma Tips_
-- Important to tune this hyperparameter to get optimum reults
+- Important to tune this hyper-parameter to get optimum results
 - Successful values range between 0.9 and 0.99
 - Lower value encourages short-term thinking
 - Higher value emphasizes long-term rewards
 
 
-## Markov Decision Processes
-Reinforcement learning problems are mathematically described using a framework called Makov Decision Processes (MDPs). These are the extended version of [Markov Chains](https://en.wikipedia.org/wiki/Markov_chain) which adds decisions and rewards elements to it.
+### Markov Decision Processes
+Reinforcement learning problems are mathematically described using a framework called Markov Decision Processes (MDPs). These are the extended version of [Markov Chains](https://en.wikipedia.org/wiki/Markov_chain) which adds decisions and rewards elements to it.
 
 _Key Terms:_
 - **State**: A set of tokens that represent every condition that the agent can be in.
@@ -61,7 +61,7 @@ _Key Terms:_
 ![reward_model_equation](https://www.theschool.ai/wp-content/uploads/2018/09/Picture3-600x58.png)
 - **?**: discount favor. This factor is a numerical value between 0 and 1 that represents the relative importance between immediate and future rewards. I.e, If the agent has to select between two actions one of them will give it a high immediate reward immediately after performing the action but will lead into going to state from which the agents expect to get less future rewards than another state that can be reached after doing an action with less immediate reward?
 
-## Value Functions Quiz
+### Value Functions Quiz
 
 1. What is a Value function?
     - The value function in reinforcement learning estimates "how good" a state is for an agent to be in.
@@ -85,10 +85,10 @@ _Key Terms:_
 
 
 
-## Homework Assignment - OpenAI Gym Installation
+### Homework Assignment - OpenAI Gym Installation
 
 
-## Sensor Networks
+### Sensor Networks
 - There are two types of policies:
     + Deterministic where the action taken entirely depends on the state
     + Stochastic which allows for randomness
@@ -98,8 +98,8 @@ _Key Terms:_
 - We can compute the value function using the Bellman Equation which expresses the Value of any State as the sum of the immediate Reward plus the Value of the State that follows
 
 
-## Google Dopamine
-Google recently released a research framework for fast prototyping of reinforcement learning algorithms called "Dopamine". They say that it aims to fill the need for a small, easily grokked codebase in which users can freely experiment with wild ideas (speculative research). In this live stream i'll test it out, try out a few basic reinforcement learning algorithms and compare it to similar frameworks. You can code along with me using CoLab. Get hype!
+### Google Dopamine
+Google recently released a research framework for fast prototyping of reinforcement learning algorithms called "Dopamine". They say that it aims to fill the need for a small, easily grokked codebase in which users can freely experiment with wild ideas (speculative research). In this live stream I'll test it out, try out a few basic reinforcement learning algorithms and compare it to similar frameworks. You can code along with me using CoLab. Get hype!
 
 **Learning Resources**:
 - [Youtube Video](https://www.youtube.com/watch?v=FWFoyFjeAaM)
@@ -107,10 +107,10 @@ Google recently released a research framework for fast prototyping of reinforcem
 - [Google Dopamine Github Repo](https://github.com/google/dopamine)
 - [Google AI Blog - Introducing a New Framework for Flexible and Reproducible Reinforcement Learning Research](https://ai.googleblog.com/2018/08/introducing-new-framework-for-flexible.html)
 - [Josh Greaves - Understanding RL: The Bellman Equations](https://joshgreaves.com/reinforcement-learning/understanding-rl-the-bellman-equations/)
-- [Deepmind Reinfrocement Learning Youtube Video](https://www.youtube.com/watch?v=N0Ld2iTMaMs)
+- [Deepmind Reinforcement Learning Youtube Video](https://www.youtube.com/watch?v=N0Ld2iTMaMs)
 
 
-## Reading Assignment (Policy Functions)
+### Reading Assignment (Policy Functions)
 1. A Machine Learning journal by Luca Palmieri
     A well-organized blog that helps people who study for the first time understand RL. It is suitable for the first  reading assignment with short length and interesting pictures attached.
 
@@ -131,6 +131,6 @@ Google recently released a research framework for fast prototyping of reinforcem
 
 4. (bonus) Reinforcement Learning: An Introduction by Richard S. Sutton and Andrew G. Barto (Second edition, 2018)
     A Bible written by RL’s father Richard Sutton. It’s a great masterpiece without a doubt, but it can be a bit difficult for people who start studying for the first time.
-    - [RL Book (P58~62)](https://drive.google.com/file/d/1xeUDVGWGUUv1-ccUMAZHJLej2C7aAFWY/view) 
+    - [RL Book (Pages 58-62)](https://drive.google.com/file/d/1xeUDVGWGUUv1-ccUMAZHJLej2C7aAFWY/view) 
 
 
