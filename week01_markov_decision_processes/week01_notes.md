@@ -1,11 +1,21 @@
 # Week 01 Notes - Markov Decision Processes
 
 ### Introduction (Move 37)
-[Youtube Video](https://www.youtube.com/watch?time_continue=615&v=fRmZck1Dakc)
+Welcome to my new reinforcement learning course titled Move 37! in this 10 week course we'll go over the basics of reinforcement learning up to modern day techniques that involve neural networks called 'deep' reinforcement learning. In this first video, I'll introduce the idea of a Markov Decision Process. This is the basic mathematical framework for framing the reinforcement learning problem. We'll also briefly mention the ideas of a 'policy' and the agent-environment loop. Get hype!
 
+**Take Aways**:
 - In Reinforcement Learning, an AI learns how to optimally interact in a real-time environment using time-delayed labels, called rewards as signal
 - The Markov Decision Process is a Mathematical Framework for defining the Reinforcement Learning Problem using States, Actions and Rewards
 - Through interacting with the environment, an AI will learn a Policy which will return an Action for a given State with the highest Reward
+
+**Learning Resources**:
+- [Youtube Video](https://www.youtube.com/watch?time_continue=615&v=fRmZck1Dakc)
+- [Code Link](https://github.com/llSourcell/Introduction_Move37)
+- [Reinforcement Learning Demystified](https://towardsdatascience.com/reinforcement-learning-demystified-markov-decision-processes-part-1-bf00dda41690)
+- [Lecture: Markov Decision Processes](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching_files/MDP.pdf)
+- [An Introduction to Markov Decision Processes](https://www.cs.rice.edu/~vardi/dag01/givan1.pdf)
+- [Markov Decision Processes](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-825-techniques-in-artificial-intelligence-sma-5504-fall-2002/lecture-notes/Lecture20FinalPart1.pdf)
+- [Art Int - Decision Processes](https://artint.info/html/ArtInt_224.html)
 
 
 ### The Bellman Equation
@@ -89,6 +99,9 @@ _Key Terms:_
 
 
 ### Sensor Networks
+What is the best way to route data in a network of routers spread out across the globe? This 'Internet of things'-based problem can be solved using reinforcement learning! In this video, I'll explain the 2 types of policies, the bellman equation, and the value function. All of these concepts are crucial in the RL pipeline and using animations + code, I'll break them down. Enjoy!
+
+**Take Aways**:
 - There are two types of policies:
     + Deterministic where the action taken entirely depends on the state
     + Stochastic which allows for randomness
@@ -96,6 +109,17 @@ _Key Terms:_
     + State-Action
     + Action-Value
 - We can compute the value function using the Bellman Equation which expresses the Value of any State as the sum of the immediate Reward plus the Value of the State that follows
+
+**Learning Resources:**
+- [Youtube Video]()
+- [Code Link](https://github.com/llSourcell/Sensor_Networks)
+- [The very basics of Reinforcement Learning](https://becominghuman.ai/the-very-basics-of-reinforcement-learning-154f28a79071)
+- [An introduction to Reinforcement Learning](https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419)
+- [Reinforcement Learning Explained](https://www.oreilly.com/ideas/reinforcement-learning-explained)
+- [Reinforcement Learning Basics](http://kvfrans.com/reinforcement-learning-basics/)
+- [Basics of Computation Reinforcement Learning](https://medium.com/syncedreview/basics-of-computational-reinforcement-learning-fca09f3609ea)
+- [A Deep Dive into Reinforcement Learning](https://www.toptal.com/machine-learning/deep-dive-into-reinforcement-learning)
+- [Learning Reinforcement Learning](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
 
 
 ### Google Dopamine
