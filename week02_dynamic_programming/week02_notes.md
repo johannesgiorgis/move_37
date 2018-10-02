@@ -1,11 +1,22 @@
 # Week 02 Notes - Dynamic Programming
 
 ### Sports Betting
-[Youtube Video](https://www.youtube.com/watch?v=mEIePvxdbkQ)
+Sports betting is a popular past-time for many and a great use-case for an important concept known as dynamic programming that I’ll introduce in this video. We'll go over concepts like value iteration, the Markov Decision Process, and the bellman optimality principle, all to help create a system that will help US optimally bet on the winning hockey team in order to maximize profits. Code, animations, theory, and yours truly. Enjoy! 
 
+**Take Aways**:
 - Dynamic Programming refers to the collection of Algorithms  that can be used to compute Optimal Policies given a perfect model of the environment
 - Value Iteration is a type of Dynamic Programming Algorithm that computes the Optimal Value Function and consequently the Optimal Policy
 - Dynamic Programming is useful, but limited because it requires a perfect environment model and is computationally expensive
+
+**Learning Resources**:
+- [Youtube Video](https://www.youtube.com/watch?v=mEIePvxdbkQ)
+- [Code Link](https://github.com/llSourcell/sports_betting_with_reinforcement_learning)
+- [Art Int - Value Iteration](https://artint.info/html/ArtInt_227.html)
+- [Deep Reinforcement Learning Demystified Episode 2](https://medium.com/@m.alzantot/deep-reinforcement-learning-demysitifed-episode-2-policy-iteration-value-iteration-and-q-978f9e89ddaa)
+- [What is an intuitive explanation of value iteration in reinforcement learning?](https://www.quora.com/What-is-an-intuitive-explanation-of-value-iteration-in-reinforcement-learning-RL)
+- [How is Policy Iteration different from Value Iteration?](https://www.quora.com/How-is-policy-iteration-different-from-value-iteration)
+- [Markov Decision Process: Value Iteration, how does it work?](https://stackoverflow.com/questions/8337417/markov-decision-process-value-iteration-how-does-it-work)
+
 
 ### Bellman Advanced
 [Youtube Video](https://www.youtube.com/watch?v=FsOmL4sQJxo)
@@ -91,6 +102,7 @@ _Additional Reads_:
 
 See the Jupyter Notebook, **policy\_and\_value\_iteration.ipynb**.
 
+
 ### Dynamic Programming Quiz
 See the PDF File, week2\_quiz\_v4.pdf under docs/.
 
@@ -164,6 +176,7 @@ _Question 5_:
 
 
 ### Homework Assignment - Week 02
+Look at hw02/ directory.
 
 
 ### iPhone XS Supply Chain
@@ -176,7 +189,6 @@ Apple just announced its new iPhone XS so expect the demand for it to be massive
     + Policy Improvement
 - While Value Iteration is a simpler algorithm than Policy Iteration, its more computationally expensive
 
-
 **Learning Resources**:  
 - [Youtube Video](https://www.youtube.com/watch?v=XiN9Hx3Y6TA)
 - [Code Link](https://github.com/llSourcell/iphone_xs_supply_chain)
@@ -185,7 +197,6 @@ Apple just announced its new iPhone XS so expect the demand for it to be massive
 - [Planning: Policy Evaluation, Policy Iteration, Value Iteration](http://kvfrans.com/planning-policy-evaluation-policy-iteration-value-iteration/)
 - [How is Policy Iteration different from Value Iteration?](https://www.quora.com/How-is-policy-iteration-different-from-value-iteration)
 - [Value Iteration and Policy Iteration](http://www.inf.ed.ac.uk/teaching/courses/rl/slides15/rl08.pdf)
-
 
 
 ### Kaggle Challenge (Live Stream)
