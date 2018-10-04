@@ -7,4 +7,4 @@ Share your results on Twitter/Facebook/Instagram using the hashtag #move37 !  Si
 
 
 # Answer
-
+See hw02.ipynb file
