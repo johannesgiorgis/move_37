@@ -178,6 +178,12 @@ _Question 5_:
 ### Homework Assignment - Week 02
 Look at hw02/ directory.
 
+**Help Resources:**
+- [RL Notes 2: Policy and Value Iteration](https://krisztiankovacs.com/reinforcement_learning/2018/09/21/rl-notes-2.html)
+- [RL Notes 2 Jupyter Notebook](https://github.com/kk1694/rl_course/blob/master/rl_notes_2.ipynb)
+- [total beginner RL Github Repo](https://github.com/JonesTheCoder/total_beginner_RL)
+- [reinforcement-learning Dynamic Programming Repo](https://github.com/dennybritz/reinforcement-learning/tree/master/DP/)
+
 
 ### iPhone XS Supply Chain
 Apple just announced its new iPhone XS so expect the demand for it to be massive! We can use a special reinforcement learning algorithm called policy iteration to help Apple manage it's retail inventory and make sure that the demand meets supply, I’ll explain how in this video. We'll assume the role of an AI savvy retail manager for Apple in San Francisco and discuss policy iteration as a solution to our problem. Dynamic programming and real world use cases, enjoy!
@@ -200,4 +206,12 @@ Apple just announced its new iPhone XS so expect the demand for it to be massive
 
 
 ### Kaggle Challenge (Live Stream)
+Two Sigma Investments published a $100,000 code competition on Kaggle that asks data scientists around the world to try their best to create an algorithm that can make predictions about anonymous financial instruments (like derivatives, assets, bonds). Normally, reinforcement learning is not used on Kaggle but in this live stream I'll use reinforcement learning to help solve this challenge. This will serve as a great real-world use case for RL and I'll also discuss some other common time series forecasting methods. Get hype!
 
+**Learning Resources**:
+- [Youtube Video](https://www.youtube.com/watch?time_continue=1&v=P1lgTATSVYA)
+- [Code Link](https://github.com/llSourcell/Kaggle_Challenge_LIVE-Two-Sigma)
+- [Kaggle: Two Sigma Financial Modeling Challenge](https://www.kaggle.com/c/two-sigma-financial-modeling)
+- [Kaggle Dataset](https://www.kaggle.com/account/login?returnUrl=%2Fc%2Ftwo-sigma-financial-modeling%2Fdownloads%2Ftrain.h5.zip)
+- [How to Generate Test Datasets in Python with scikit-learn](https://machinelearningmastery.com/generate-test-datasets-python-scikit-learn/)
+- [A Kaggle Master Explains Gradient Boosting](http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/)
