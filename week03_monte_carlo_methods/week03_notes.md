@@ -93,12 +93,144 @@ MAB is such a popular example that you will see it more often than not.
 - [Casinopedia: One Armed Bandit](https://www.casinopedia.org/terms/o/one-armed-bandit)
 
 
-
 ### Monte Carlo Coding Tutorial
+- [Youtube Video](https://www.youtube.com/watch?v=mMEFFN1H5Cg)
+- [Code Link](https://github.com/colinskow/move37/tree/master/dynamic_programming)
+
+**Dynamic Programming**:
+
+- Brute force algorithm
+- Requires looping through all possible states and actions
+- Not practical for large state or action spaces
+
+**Monte Carlo**:
+
+- Only update value table, V for visited states
+- Don't need to know states ahead of time
+- Simply discover them as we play
+- Therefore, much more efficient for creating optimal policy in more complex games
+    + Monte Carlo algorithm is at the heart of Alpha Zero's success in learning extremely complex games like Chess and Go from scratch and playing them at a super human level
+- Chess has pushed the limits of brute force computing and Go is so complex, brute force is impossible
+- When it's impossible or impractical to try out each possibility we can either
+    + Randomly sample moves
+    + OR (ideally) intelligently sample what's most promising
+- Real world games don't have 'God' mode
+    + We knew all the details: state transition probabilities, and never actually played the game
+    + Often, we don't know transition probabilities ahead of time
+- Simply play the game and collect experience
+- Use the familiar Bellman Equation to estimate returns from each state, given current policy
+- Iterative improve both value calculations and policy with every episode
+- Need to learn basic concepts of Q learning
+
+**Q Learning**:
+
+- Q = Quality
+- Q = long-term discounted reward we expect from taking action a in state s
+
+**What's Changed**:
+
+- We are now dealing with estimates rather than perfect values
+- We are learning from experience without knowing ahead of time what the best action is
+- We are calculating the expected value relative to current policy
+- Better value estimate = better policy estimate = better values
+
+**Policy**:
+
+- Policy is a simple lookup table: state -> best action
+- Start with a random policy in Monte Carlo
+- Play the game, use experience to improve value estimates
+- Better value estimates improve policy
+
+**Returns (G)**:
+
+- Return: the reward from our immediate action, plus all discounted future rewards from applying the current policy
+- Denoted by capital G
+- $$G_t = r_(t+1) + \gamma {G_(t+1)}$$
+- Work in reverse from final state applying this formula
+- Once several (s, G) pairs are collected, average them to estimate the value of each state
+
+**Algorithm to Calculate Returns**:
+
+- Initialize G to 0
+- states_and_returns = []
+- Loop backwards through the list of state_and_rewards (s, r):
+    + append (s, G) to states_and_returns
+    + G = r + gamma * G
+- reverse states_and_returns to the original order
+
+**Explore/Exploit Dilemma**:
+
+- We must strike a balance between explore/exploit
+- We are going to use a strategy called 'epsilon greedy'
+- Epsilon is the probability that our agent will choose a random action instead of following policy
+
+**Epsilon Greedy Algorithm**:
+
+- Generate a random number p, between 0 and 1
+- if $$p < (1 - \epsilon)$$ take the action dictated by policy
+- otherwise take a random action
+
+**First Visit Optimization**:
+
+- What happens if we visit the same state more than once?
+- It's been proven subsequent visits won't change the answer
+- All we need is the first visit to every given state
+- We throw away the rest of the data - makes our computing faster
+
+**Monte Carlo Q Learning Algorithm**:
+
+1. Initialize a policy to a random action for every state
+2. Initialize Q[(s, a)] to 0 for every possible state and action
+3. Initialize returns[(s, a)] as an empty array for each possible state and action
+4. Loop N times (enough for values to converge):
+    5. play the game and get a list of states_actions_returns
+    6. For (s, A, G) in states_actions_returns:
+        7. If we haven't seen this (s, a) pair so far in the game
+            8. append G to returns[s, a]
+            9. Q[s][a] = mean(returns[s, a])
+        10. For each non-terminal state s:
+            11. policy[s] = the action with the highest Q value for state s
+12. for each state s, V[s] = highest Q value for state s
+13. Return V, policy
 
 
 ### MC Control & MC Prediction
+- [Code Link](https://gist.github.com/Sathishruw/d609e358b61268cdf891cc93e15e5f63)
 
+There are 2 types of tasks in reinforcement learning:
+- Prediction
+- Control
+
+**Prediction**:
+- A task that can predict expected total reward from any given state assuming the function **π(a|s)** is given.
+- It predicts the value function **Vπ**
+- Example: Policy evaluation (Estimate)
+
+**Control**:
+- A task that can find policy **π(a|s)** that maximizes the expected total reward from any given state.
+- If given a policy **π** control finds an optimal policy **π\***
+- Example: Policy improvement (Optimize)
+
+Policy Iteration is a combination of prediction and control to find the optimal policy. We can differentiate policy learning methods into 2 types:
+    - On Policy Learning
+        + This method learns on the job. It evaluates or improves the policy that used to make the decisions
+    - Off Policy Learning
+        + This method evaluates one policy while following another policy. The earlier is called target policy which may be deterministic and the latter behavior policy is stochastic
+
+**Model Free Methods**:
+- In Markov Decision Process, we know/assume all the components needed to solve a problem
+- In Model Free Learning, we focus on calculating the value functions directly from the interactions with the environment
+- The aim is to figure out V for unknown MDP assuming that we have a policy. The first method we will use is the [Monte Carlo Method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
+
+**Monte Carlo Method**:
+- Any method which solves a problem by generating suitable random numbers and observing that fraction of the numbers obeying some property or properties.
+- This method learns value functions from the episodes of experience. We get the reward at the end of an episode:
+    + Episode = S1 A1 R1, S2, A2, R2, .... ST (Sequence of steps until the termination state)
+    + v(s) = E[G_t | S_t = s]
+    + G_t = R_t + 1 + γR_t + 2 + ...
+- There are 2 types of MC:
+    + **First Visit MC**: Average returns only for first time s is visited in an episode
+    + **Every Visit MC**: Average returns for every time s is visited in an episode
 
 ### Reading Assignment (Monte Carlo Methods)
 
