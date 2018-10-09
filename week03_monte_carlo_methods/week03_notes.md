@@ -202,27 +202,32 @@ There are 2 types of tasks in reinforcement learning:
 - Control
 
 **Prediction**:
+
 - A task that can predict expected total reward from any given state assuming the function **π(a|s)** is given.
 - It predicts the value function **Vπ**
 - Example: Policy evaluation (Estimate)
 
 **Control**:
+
 - A task that can find policy **π(a|s)** that maximizes the expected total reward from any given state.
 - If given a policy **π** control finds an optimal policy **π\***
 - Example: Policy improvement (Optimize)
 
 Policy Iteration is a combination of prediction and control to find the optimal policy. We can differentiate policy learning methods into 2 types:
-    - On Policy Learning
-        + This method learns on the job. It evaluates or improves the policy that used to make the decisions
-    - Off Policy Learning
-        + This method evaluates one policy while following another policy. The earlier is called target policy which may be deterministic and the latter behavior policy is stochastic
+
+- On Policy Learning
+    + This method learns on the job. It evaluates or improves the policy that used to make the decisions
+- Off Policy Learning
+    + This method evaluates one policy while following another policy. The earlier is called target policy which may be deterministic and the latter behavior policy is stochastic
 
 **Model Free Methods**:
+
 - In Markov Decision Process, we know/assume all the components needed to solve a problem
 - In Model Free Learning, we focus on calculating the value functions directly from the interactions with the environment
 - The aim is to figure out V for unknown MDP assuming that we have a policy. The first method we will use is the [Monte Carlo Method](https://en.wikipedia.org/wiki/Monte_Carlo_method)
 
 **Monte Carlo Method**:
+
 - Any method which solves a problem by generating suitable random numbers and observing that fraction of the numbers obeying some property or properties.
 - This method learns value functions from the episodes of experience. We get the reward at the end of an episode:
     + Episode = S1 A1 R1, S2, A2, R2, .... ST (Sequence of steps until the termination state)
@@ -232,7 +237,63 @@ Policy Iteration is a combination of prediction and control to find the optimal 
     + **First Visit MC**: Average returns only for first time s is visited in an episode
     + **Every Visit MC**: Average returns for every time s is visited in an episode
 
+**First Visit MC Prediction Algorithm**:
+
+![first-version algorithm](imgs/first_visit_mc_prediction_algorithm.png)
+
+**V(s)** is the average of G. We can calculate the mean if we have all the values but what if we do not have all the values? We use _Incremental mean_
+
+**Incremental Mean**:
+
+The mean µ<sub>1</sub>, µ<sub>2</sub>,... of a sequence x1, x2,... can be computed incrementally. µ<sub>k</sub> is the mean of _K_ items
+
+![incremental mean equation](imgs/incremental_mean_equation.png)
+
+For each episode and for each state S<sub>t</sub> with return G<sub>t</sub>:
+
+$$ N(S<sub>t</sub>) ← N(S<sub>t</sub>) + 1 $$
+
+$$ V(S<sub>t</sub>) ← V(S<sub>t</sub>) + 1/N(S<sub>t</sub>) (G<sub>t</sub> − V(S<sub>t</sub>)) $$
+
+In non-stationary problems, it can be useful to track a running mean,e.g. forget old episodes:
+
+$$ V(S<sub>t</sub>) ← V(S<sub>t</sub>) + α (G<sub>t</sub> − V(S<sub>t</sub>)) $$
+
+
+**Monte Carlo for Control Tasks**
+
+Policy iteration is the base of control tasks:
+
+![policy iteration](imgs/policy_iteration_diagram.jpeg)
+
+- In Dynamic Programming, we have transition probability, P so we can improve the policy by acting greedily
+- In Monte Carlo method, we can do the same thing by calculating Q values taking the mean values of episodes.
+
+
+
+
 ### Reading Assignment (Monte Carlo Methods)
+
+**[Basic] Understanding concepts**
+
+This is an article that explains the basic concepts of Monte Carlo Methods and the random sampling easily and concisely.
+
+- [Monte Carlo Simulation](https://www.vertex42.com/ExcelArticles/mc/MonteCarloSimulation.html)
+
+**[Intermediate] Understanding deeper concepts using math and code**
+
+The first slide note mixes of Sutton and Silver’s lecture to make it easier to understand, so you can start well even if you don’t know math in depth.
+The second article explains MC through python code by implementing blackjack with OpenAI gym.
+
+- [Monte Carlo](https://www.kth.se/social/files/58b941d5f276542843812288/RL04-Monte-Carlo.pdf)
+- [Monte Carlo Simulation and Reinforcement Learning](https://www.datahubbs.com/monte-carlo-simulation-and-reinforcement-learning-1)
+
+**[More] Try Monte Carlo Simulation to calculate pi**
+
+A JavaScript demo for estimating pi using the Monte Carlo Methods.
+
+- [Estimating pi Monte Carlo](https://academo.org/demos/estimating-pi-monte-carlo/)
+- [Monte Carlo Simulation Kaggle Kernel](https://www.kaggle.com/submarineering/submarineering-montecarlo-simulation)
 
 
 ### Q Learning for Trading
