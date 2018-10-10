@@ -238,7 +238,7 @@ Policy Iteration is a combination of prediction and control to find the optimal 
 
 **First Visit MC Prediction Algorithm**:
 
-![first-version algorithm](imgs/first_visit_mc_prediction_algorithm.png)
+![first visit mc prediction algorithm](imgs/first_visit_mc_prediction_algorithm.png)
 
 **V(s)** is the average of G. We can calculate the mean if we have all the values but what if we do not have all the values? We use _Incremental mean_
 
