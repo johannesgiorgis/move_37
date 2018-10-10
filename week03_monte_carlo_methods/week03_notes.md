@@ -195,7 +195,6 @@ MAB is such a popular example that you will see it more often than not.
 
 
 ### MC Control & MC Prediction
-- [Code Link](https://gist.github.com/Sathishruw/d609e358b61268cdf891cc93e15e5f63)
 
 There are 2 types of tasks in reinforcement learning:
 - Prediction
@@ -269,8 +268,71 @@ Policy iteration is the base of control tasks:
 - In Dynamic Programming, we have transition probability, P so we can improve the policy by acting greedily
 - In Monte Carlo method, we can do the same thing by calculating Q values taking the mean values of episodes.
 
+For each state S<sub>t</sub> and action A<sub>t</sub> with return G<sub>t</sub>:
+
+$$ N(S<sub>t</sub>, A<sub>t</sub>) <- N(S<sub>t</sub>, A<sub>t</sub>) + 1 $$
+
+$$ Q(S<sub>t</sub>, A<sub>t</sub>) <- Q(S<sub>t</sub>, A<sub>t</sub>) + 1/N(S<sub>t</sub>, A<sub>t</sub>)(G<sub>t</sub> - Q(S<sub>t</sub>, A<sub>t</sub>)) $$
+
+In non-stationary problems, it can be useful to track a running mean,e.g. forget old episodes:
+
+$$ Q(S<sub>t</sub>, A<sub>t</sub>) <- Q(S<sub>t</sub>, A<sub>t</sub>) + α(G<sub>t</sub> - Q(S<sub>t</sub>, A<sub>t</sub>)) $$
+
+Q(S, A) <- Expected return when starting state S, taking the action A, thereafter following policy π.
+
+First Visit MC for Q(S, A) -> A state action pair is said to be visited in an episode if **S** is visited and **A** is taken in that episode. So we got the values Q by acting greedily we can improve the policy:
+
+![improve policy equation](imgs/improve_policy_equation.png)
+
+Now we have a solution but it isn't the best as we will run into exploration problem. Let's find a better solution. In Model-Free RL, we need to interact with the environment to find out the best strategy so we need to explore the entire state space while figuring out best actions.
+
+**Exploration**: Finding out more information about the environment. Exploring a lot of states and actions in the environments.
+
+**Exploitation**: Exploiting the known information to maximize the reward.
+
+**Example**:
+
+- Revisit example of Roomba cleaning the floor
+- When the state is in charged up mode, it needs to cover the maximum area in a grid world for cleaning which falls under exploration
+- When the state of the machine changes to low battery, it needs to find the charging dock as soon as possible to avoid getting stuck. The robot needs to exploit rather than explore to maximize the reward
+- Due to the exploration problem, we cannot expect Roomba to act greedily in MC to improve policy
+- Instead we use the Epsilon-greedy Policy
+
+**Epsilon-greedy Policy**:
+
+- The best known action based on our experience is selected with (1-epsilon) probability and the rest of the time, e.g. with epsilon probability any action is selected randomly. Initially, epsilon is 1 so we can explore more but as we do many iterations we slowly decrease the epsilon to 0 (which is exploitation -> choosing the best known action) this gets us to have the value of epsilon between 0 and 1.
+
+![epsilon-greedy policy](imgs/epsilon_greedy_policy.png)
 
 
+**First Visit MC Control**:
+
+![first visit mc control algorithm](imgs/first_visit_mc_control_algorithm.png)
+
+In this algorithm we are calculating the Q value and also using the same to improve the policy.
+
+**GLIE Monte-Carlo Control Method**:
+
+GLIE Monte-Carlo is an On-Policy learning method that learns from complete episodes. For each state-action pair, we keep track of how many times the pair has been visited with a simple counter function:
+
+$$ N(S<sub>t</sub>, A<sub>t</sub>) <- N(S<sub>t</sub>, A<sub>t</sub>) + 1 $$
+
+For each episode, we can update our estimated value function using an incremental mean:
+
+$$ Q(S<sub>t</sub>, A<sub>t</sub>) <- Q(S<sub>t</sub>, A<sub>t</sub>) + (1 / N(S<sub>t</sub>, A<sub>t</sub>)) * (G<sub>t</sub> - Q(S<sub>t</sub>, A<sub>t</sub>)) $$
+
+Here, G<sub>t</sub> either represents the return from time _t_ when the agent first visited the state-action pair, or the sum of returns from each time _t_ that the agent visited the state-action pair, depending on whether you are using first-visit or every-first Monte Carlo.
+
+We'll adopt a ϵ-greedy policy with ϵ=1/k where k represents the number of episodes our agent has learned from.
+
+**Code Challenge**:
+- [Solution Code Link](https://gist.github.com/Sathishruw/d609e358b61268cdf891cc93e15e5f63)
+
+Let's try to solve the Roomba problem using GLIE MC Control Method.
+
+**Additional Resources**:
+- [RL Learning Implementations](https://www.jeremyjordan.me/rl-learning-implementations/)
+- [Reinforcement Learning Slides](https://courses.cs.washington.edu/courses/cse573/12au/slides/08-rl.pdf)
 
 ### Reading Assignment (Monte Carlo Methods)
 
