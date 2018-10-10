@@ -40,7 +40,7 @@ A class of algorithms which seek to simplify complex problems by breaking them u
 
 **Bellman Equation**  
 
-![V(s) = max_a(R(s, a) + y * V(s'))](https://cdn-images-1.medium.com/max/800/1*f69zoIX-v1tWPRESXQQQhQ.png)
+![V(s) = max_a(R(s, a) + y * V(s'))](imgs/bellman_equation.png)
 
 _Gamma Tips_
 - Important to tune this hyper-parameter to get optimum results
@@ -61,14 +61,14 @@ _Key Terms:_
 - **π*** is called the **optimal policy**, which maximizes the expected reward. Among all the policies taken, the optimal policy is the one that optimizes to maximize the amount of reward received or expected to receive over a lifetime.
 
 **Markov Decision Process (MDP) is a tuple(S,A,T,r,?)**:
-![mdp_diagram](https://www.theschool.ai/wp-content/uploads/2018/09/Picture1-600x223.png)
+![mdp_diagram](imgs/mdp_diagram.png)
 
 - S: Set of observations. The agent observes the environment as one item of this set.
 - A: Set of actions. The set of actions the agent can choose one from to interact with the environment.
 - T: P(s'|s,a) transition probability matrix. This models what next state s' will be after the agent makes the action _a_ while being in the current state _s_.  
-![transition_probability_matrix_equation](https://www.theschool.ai/wp-content/uploads/2018/09/Picture2-600x57.png)
+![transition_probability_matrix_equation](imgs/transition_probability_matrix_equation.png)
 - r: P(r|s,a) reward model that models what reward the agent will receive when it performs an action _a_ when it is in state _s_.  
-![reward_model_equation](https://www.theschool.ai/wp-content/uploads/2018/09/Picture3-600x58.png)
+![reward_model_equation](imgs/reward_model_equation.png)
 - **?**: discount favor. This factor is a numerical value between 0 and 1 that represents the relative importance between immediate and future rewards. I.e, If the agent has to select between two actions one of them will give it a high immediate reward immediately after performing the action but will lead into going to state from which the agents expect to get less future rewards than another state that can be reached after doing an action with less immediate reward?
 
 
