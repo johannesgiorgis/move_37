@@ -417,7 +417,7 @@ We can use reinforcement learning to build an automated trading bot in a few lin
 
 <a id="homework-assignment-monte-carlo"></a>
 ### Homework Assignment (Monte Carlo)
-
+Look at hw03/ directory.
 
 <a id="tensor-processing-units-live-stream"></a>
 ### Tensor Processing Units (Live Stream)
