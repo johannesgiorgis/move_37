@@ -1,5 +1,20 @@
 # Week 01 Notes - Markov Decision Processes
 
+<!-- MarkdownTOC -->
+
+1. [Introduction \(Move 37\)](#introduction-move-37)
+1. [The Bellman Equation](#the-bellman-equation)
+1. [Markov Decision Processes](#markov-decision-processes)
+1. [Value Functions Quiz](#value-functions-quiz)
+1. [Homework Assignment - OpenAI Gym Installation](#homework-assignment-openai-gym-installation)
+1. [Sensor Networks](#sensor-networks)
+1. [Google Dopamine](#google-dopamine)
+1. [Reading Assignment \(Policy Functions\)](#reading-assignment-policy-functions)
+
+<!-- /MarkdownTOC -->
+
+
+<a id="introduction-move-37"></a>
 ### Introduction (Move 37)
 Welcome to my new reinforcement learning course titled Move 37! in this 10 week course we'll go over the basics of reinforcement learning up to modern day techniques that involve neural networks called 'deep' reinforcement learning. In this first video, I'll introduce the idea of a Markov Decision Process. This is the basic mathematical framework for framing the reinforcement learning problem. We'll also briefly mention the ideas of a 'policy' and the agent-environment loop. Get hype!
 
@@ -18,6 +33,7 @@ Welcome to my new reinforcement learning course titled Move 37! in this 10 week 
 - [Art Int - Decision Processes](https://artint.info/html/ArtInt_224.html)
 
 
+<a id="the-bellman-equation"></a>
 ### The Bellman Equation
 [Youtube Video](https://www.youtube.com/watch?time_continue=68&v=JMpslE8GtCo)
 
@@ -49,6 +65,7 @@ _Gamma Tips_
 - Higher value emphasizes long-term rewards
 
 
+<a id="markov-decision-processes"></a>
 ### Markov Decision Processes
 Reinforcement learning problems are mathematically described using a framework called Markov Decision Processes (MDPs). These are the extended version of [Markov Chains](https://en.wikipedia.org/wiki/Markov_chain) which adds decisions and rewards elements to it.
 
@@ -72,6 +89,7 @@ _Key Terms:_
 - **?**: discount favor. This factor is a numerical value between 0 and 1 that represents the relative importance between immediate and future rewards. I.e, If the agent has to select between two actions one of them will give it a high immediate reward immediately after performing the action but will lead into going to state from which the agents expect to get less future rewards than another state that can be reached after doing an action with less immediate reward?
 
 
+<a id="value-functions-quiz"></a>
 ### Value Functions Quiz
 
 1. What is a Value function?
@@ -95,10 +113,12 @@ _Key Terms:_
     - **Explanation**: ? : Discount factor for rewards. This factor is a numerical value between 0 and 1. The larger the factor, the smaller the discount. Some may perceive this to mean that the learning agent cares more about the long term reward. The smaller the factor, the bigger the discount. Some may perceive this to mean that the agent cares more about the short term reward. Discount factor has little to do with proximity of high and low reward regions but everything to do with prioritization of closer (in time) rewards. In other words, discount factor works as an ‘urgency of life in real world’  where some humans live as if the world is going to come to an end while some are relaxed. In addition, discount factor is meant to help with computational resources’ numerical limitations. If rewards grow exponentially and are not bounded, then their discounted sum (or value function) does not converge. Computers in general cannot handle arbitrarily big numbers.
 
 
+<a id="homework-assignment-openai-gym-installation"></a>
 ### Homework Assignment - OpenAI Gym Installation
 Look at hw01/ directory.
 
 
+<a id="sensor-networks"></a>
 ### Sensor Networks
 What is the best way to route data in a network of routers spread out across the globe? This 'Internet of things'-based problem can be solved using reinforcement learning! In this video, I'll explain the 2 types of policies, the bellman equation, and the value function. All of these concepts are crucial in the RL pipeline and using animations + code, I'll break them down. Enjoy!
 
@@ -123,6 +143,7 @@ What is the best way to route data in a network of routers spread out across the
 - [Learning Reinforcement Learning](http://www.wildml.com/2016/10/learning-reinforcement-learning/)
 
 
+<a id="google-dopamine"></a>
 ### Google Dopamine
 Google recently released a research framework for fast prototyping of reinforcement learning algorithms called "Dopamine". They say that it aims to fill the need for a small, easily grokked codebase in which users can freely experiment with wild ideas (speculative research). In this live stream I'll test it out, try out a few basic reinforcement learning algorithms and compare it to similar frameworks. You can code along with me using CoLab. Get hype!
 
@@ -135,6 +156,7 @@ Google recently released a research framework for fast prototyping of reinforcem
 - [Deepmind Reinforcement Learning Youtube Video](https://www.youtube.com/watch?v=N0Ld2iTMaMs)
 
 
+<a id="reading-assignment-policy-functions"></a>
 ### Reading Assignment (Policy Functions)
 1. A Machine Learning journal by Luca Palmieri
     A well-organized blog that helps people who study for the first time understand RL. It is suitable for the first  reading assignment with short length and interesting pictures attached.
