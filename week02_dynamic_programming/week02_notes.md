@@ -1,5 +1,21 @@
 # Week 02 Notes - Dynamic Programming
 
+<!-- MarkdownTOC -->
+
+1. [Sports Betting](#sports-betting)
+1. [Bellman Advanced](#bellman-advanced)
+1. [Dynamic Programming Tutorial](#dynamic-programming-tutorial)
+1. [Dynamic Programming Reading Assignment](#dynamic-programming-reading-assignment)
+1. [Value & Policy Iteration](#value-policy-iteration)
+1. [Dynamic Programming Quiz](#dynamic-programming-quiz)
+1. [Homework Assignment - Week 02](#homework-assignment-week-02)
+1. [iPhone XS Supply Chain](#iphone-xs-supply-chain)
+1. [Kaggle Challenge \(Live Stream\)](#kaggle-challenge-live-stream)
+
+<!-- /MarkdownTOC -->
+
+
+<a id="sports-betting"></a>
 ### Sports Betting
 Sports betting is a popular past-time for many and a great use-case for an important concept known as dynamic programming that I’ll introduce in this video. We'll go over concepts like value iteration, the Markov Decision Process, and the bellman optimality principle, all to help create a system that will help US optimally bet on the winning hockey team in order to maximize profits. Code, animations, theory, and yours truly. Enjoy! 
 
@@ -18,6 +34,7 @@ Sports betting is a popular past-time for many and a great use-case for an impor
 - [Markov Decision Process: Value Iteration, how does it work?](https://stackoverflow.com/questions/8337417/markov-decision-process-value-iteration-how-does-it-work)
 
 
+<a id="bellman-advanced"></a>
 ### Bellman Advanced
 [Youtube Video](https://www.youtube.com/watch?v=FsOmL4sQJxo)
 
@@ -39,6 +56,7 @@ Sports betting is a popular past-time for many and a great use-case for an impor
 We can use Dynamic Programming to calculate the values of the grid cells.
 
 
+<a id="dynamic-programming-tutorial"></a>
 ### Dynamic Programming Tutorial
 - [Youtube Video](https://www.youtube.com/watch?v=aAkFtRxeP7c)
 - [Tutorial Source Code](https://github.com/colinskow/move37/tree/master/dynamic_programming)
@@ -73,6 +91,7 @@ We will only focus on value iteration right now because it is the simplest, we'v
 - Repeat steps 2-3 until the largest change in V[S] between iterations is below our threshold
 
 
+<a id="dynamic-programming-reading-assignment"></a>
 ### Dynamic Programming Reading Assignment
 [Reading Assignment](https://www.theschool.ai/wp-content/uploads/2018/09/Reinforcement-Learning-Dynamic-Programming-V1.0.pdf)
 
@@ -96,6 +115,7 @@ _Additional Reads_:
 4. [Advanced](https://djrusso.github.io/RLCourse/index)  
 
 
+<a id="value-policy-iteration"></a>
 ### Value & Policy Iteration
 - [Policy & Value Iteration PDF](https://www.theschool.ai/wp-content/uploads/2018/09/policy_and_value_iteration.pdf)
 - [Introduction Lecture Summary](https://blog.goodaudience.com/01-reinforcement-learning-move-37-introduction-c3449dac2d54)
@@ -103,6 +123,7 @@ _Additional Reads_:
 See the Jupyter Notebook, **policy\_and\_value\_iteration.ipynb**.
 
 
+<a id="dynamic-programming-quiz"></a>
 ### Dynamic Programming Quiz
 See the PDF File, week2\_quiz\_v4.pdf under docs/.
 
@@ -175,6 +196,7 @@ _Question 5_:
 
 
 
+<a id="homework-assignment-week-02"></a>
 ### Homework Assignment - Week 02
 Look at hw02/ directory.
 
@@ -185,6 +207,7 @@ Look at hw02/ directory.
 - [reinforcement-learning Dynamic Programming Repo](https://github.com/dennybritz/reinforcement-learning/tree/master/DP/)
 
 
+<a id="iphone-xs-supply-chain"></a>
 ### iPhone XS Supply Chain
 Apple just announced its new iPhone XS so expect the demand for it to be massive! We can use a special reinforcement learning algorithm called policy iteration to help Apple manage it's retail inventory and make sure that the demand meets supply, I’ll explain how in this video. We'll assume the role of an AI savvy retail manager for Apple in San Francisco and discuss policy iteration as a solution to our problem. Dynamic programming and real world use cases, enjoy!
 
@@ -205,6 +228,7 @@ Apple just announced its new iPhone XS so expect the demand for it to be massive
 - [Value Iteration and Policy Iteration](http://www.inf.ed.ac.uk/teaching/courses/rl/slides15/rl08.pdf)
 
 
+<a id="kaggle-challenge-live-stream"></a>
 ### Kaggle Challenge (Live Stream)
 Two Sigma Investments published a $100,000 code competition on Kaggle that asks data scientists around the world to try their best to create an algorithm that can make predictions about anonymous financial instruments (like derivatives, assets, bonds). Normally, reinforcement learning is not used on Kaggle but in this live stream I'll use reinforcement learning to help solve this challenge. This will serve as a great real-world use case for RL and I'll also discuss some other common time series forecasting methods. Get hype!
 
