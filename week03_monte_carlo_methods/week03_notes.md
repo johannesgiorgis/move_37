@@ -1,6 +1,23 @@
 # Week 03 Notes - Monte Carlo Methods
 
+<!-- MarkdownTOC -->
+
+1. [Internet of Things Optimization](#internet-of-things-optimization)
+1. [Video Lesson \(Exploration vs. Exploitation\)](#video-lesson-exploration-vs-exploitation)
+1. [Reading Assignment \(Exploration vs Exploitation and Multi-Armed Bandits\)](#reading-assignment-exploration-vs-exploitation-and-multi-armed-bandits)
+1. [Monte Carlo Coding Tutorial](#monte-carlo-coding-tutorial)
+1. [MC Control & MC Prediction](#mc-control-mc-prediction)
+1. [Reading Assignment \(Monte Carlo Methods\)](#reading-assignment-monte-carlo-methods)
+1. [Q Learning for Trading](#q-learning-for-trading)
+1. [Homework Assignment \(Monte Carlo\)](#homework-assignment-monte-carlo)
+1. [Tensor Processing Units \(Live Stream\)](#tensor-processing-units-live-stream)
+
+<!-- /MarkdownTOC -->
+
+
+<a id="internet-of-things-optimization"></a>
 ### Internet of Things Optimization
+
 The Internet of things lives! More and more devices are coming prepackaged with Internet access that wouldn’t normally be. That includes everything from smart salt shakers to smart tabletops. And because these devices have a connection to the world wide web, they can communicate with the outside world and each other, sharing information and even learning from one another. In this video, I'll explain how to use a reinforcement learning technique called "Monte Carlo" to optimize electricity consumption and cooling demands for a smart home. Enjoy!
 
 **Notes**:
@@ -50,8 +67,9 @@ The Internet of things lives! More and more devices are coming prepackaged with 
 - [Model-Free Prediction & Control with Monte Carlo](https://github.com/dennybritz/reinforcement-learning/tree/master/MC)
 
 
+<a id="video-lesson-exploration-vs-exploitation"></a>
 ### Video Lesson (Exploration vs. Exploitation)
-[Youtube Video](https://www.youtube.com/watch?time_continue=3&v=cEFx3wtNONE)
+- [Youtube Video](https://www.youtube.com/watch?time_continue=3&v=cEFx3wtNONE)
 
 **Notes**:
 
@@ -65,6 +83,7 @@ The Internet of things lives! More and more devices are coming prepackaged with 
     + Decrease Epsilon: Greedy - encourage our agent to exploit acquired knowledge of rewards taking the action with the highest estimated reward
 
 
+<a id="reading-assignment-exploration-vs-exploitation-and-multi-armed-bandits"></a>
 ### Reading Assignment (Exploration vs Exploitation and Multi-Armed Bandits)
 
 **[Basic] Understanding concepts with math**
@@ -93,6 +112,7 @@ MAB is such a popular example that you will see it more often than not.
 - [Casinopedia: One Armed Bandit](https://www.casinopedia.org/terms/o/one-armed-bandit)
 
 
+<a id="monte-carlo-coding-tutorial"></a>
 ### Monte Carlo Coding Tutorial
 - [Youtube Video](https://www.youtube.com/watch?v=mMEFFN1H5Cg)
 - [Code Link](https://github.com/colinskow/move37/tree/master/dynamic_programming)
@@ -194,6 +214,7 @@ MAB is such a popular example that you will see it more often than not.
 13. Return V, policy
 
 
+<a id="mc-control-mc-prediction"></a>
 ### MC Control & MC Prediction
 
 There are 2 types of tasks in reinforcement learning:
@@ -334,6 +355,7 @@ Let's try to solve the Roomba problem using GLIE MC Control Method.
 - [RL Learning Implementations](https://www.jeremyjordan.me/rl-learning-implementations/)
 - [Reinforcement Learning Slides](https://courses.cs.washington.edu/courses/cse573/12au/slides/08-rl.pdf)
 
+<a id="reading-assignment-monte-carlo-methods"></a>
 ### Reading Assignment (Monte Carlo Methods)
 
 **[Basic] Understanding concepts**
@@ -358,10 +380,44 @@ A JavaScript demo for estimating pi using the Monte Carlo Methods.
 - [Monte Carlo Simulation Kaggle Kernel](https://www.kaggle.com/submarineering/submarineering-montecarlo-simulation)
 
 
+<a id="q-learning-for-trading"></a>
 ### Q Learning for Trading
 
+We can use reinforcement learning to build an automated trading bot in a few lines of Python code! In this video, I'll demonstrate how a popular reinforcement learning technique called "Q learning" allows an agent to approximate prices for stocks in a portfolio. The literature of reinforcement learning is incredibly rich. There are so many concepts, like TD-Learning and Actor-Critic for example, that have real-world potential. I hope this video gives you insight into how this incredibly powerful yet simple algorithm works, enjoy! 
 
+**Notes**:
+
+- Automated trading bots are a popular way to earn a passive income
+- How to use a reinforcement learning strategy called Q-Learning to simultaneously predict prices for 3 different stocks in a portfolio using several data points
+- The History and Future of Automated Trading
+    + 1983: Bloomberg builds first computerized system to provide real-time market data financial calculations and analytics
+    + 1998: US Securities and Exchange Commission (SEC) authorized electronic exchanges and allowed trading services to execute trades 1000 times faster than a human
+    + Trading Systems Employ a Wide Range of Investment and Trading Activities to maximize return while minimizing risk
+- AI in Finance is probably the most mature application of AI in any industry setting
+- Start Ups:
+    + Neotic AI
+    + Alpaca.AI
+
+**Take Aways**:
+
+- A partially observable Markov Decision Process is one where we don't know what the true state looks like, but we can observe a part of it
+- A Q Table is one where the states are rows and actions are columns. It helps us find the best action to take for each state
+- Q-Learning is the process of learning what this Q Table is directly, without needing to learn either the transition probability or reward function
+
+**Learning Resources**:
+
+- [Youtube Video](https://www.youtube.com/watch?time_continue=7&v=rRssY6FrTvU)
+- [Code Link](https://github.com/llSourcell/Q-Learning-for-Trading)
+- [Intro to Learning to Trade with Reinforcement Learning](http://www.wildml.com/2018/02/introduction-to-learning-to-trade-with-reinforcement-learning/)
+- [Algorithm Trading using Q-Learning and Recurrent RL PDF](http://cs229.stanford.edu/proj2009/LvDuZhai.pdf)
+- [Deep Reinforcement Learning for Algorithmic Trading](https://medium.com/@gaurav1086/machine-learning-for-algorithmic-trading-f79201c8bac6)
+- [Github - Q-Trader](https://github.com/edwardhdlu/q-trader)
+- [Reinforcement Learning for Automated Trading](http://www1.mate.polimi.it/~forma/Didattica/ProgettiPacs/BrambillaNecchi15-16/PACS_Report_Pierpaolo_Necchi.pdf)
+
+
+<a id="homework-assignment-monte-carlo"></a>
 ### Homework Assignment (Monte Carlo)
 
 
+<a id="tensor-processing-units-live-stream"></a>
 ### Tensor Processing Units (Live Stream)
