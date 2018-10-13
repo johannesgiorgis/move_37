@@ -1,10 +1,19 @@
 # Move 37
 
-![move_37_image](https://www.theschool.ai/wp-content/uploads/2018/09/Screen-Shot-2018-09-05-at-3.51.48-PM.png)
+![move_37_image](imgs/move_37_logo.png)
 
-I am attending Siraj's Move 37 course through the School of AI. This repository contains my notes as I work through his course.
 
-#### Course Links
+- [Introduction](#introduction)
+- [Course Curriculum](#course-curriculum)
+
+
+<a id="introduction"></a>
+## Introduction
+
+I am attending Siraj's Move 37 course through the School of AI. This repository contains my notes and assignments as I work through his course. I also use it to gather and track all resources Siraj provides us through his course.
+
+
+### Course Links
 
 - [Course Website](https://www.theschool.ai/courses/move-37-course/)
 - [Move 37 Official Trailer](https://www.youtube.com/watch?v=Ei1YBf6qQAw&t=1s)
@@ -12,9 +21,17 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Move 37 Syllabus](https://github.com/llSourcell/Move_37_Syllabus)
 
 
-From the Course Syllabus:
+### Weekly Notes
+- [Week 01 Notes: Markov Decision Processes](week01_markov_decision_processes/week01_notes.md)
+- [Week 02 Notes: Dynamic Programming](week02_dynamic_programming/week02_notes.md)
+- [Week 03 Notes: Monte Carlo Methods](week03_monte_carlo_methods/week03_notes.md)
 
-#### Course Objective
+
+
+<a id="course-curriculum"></a>
+## Course Curriculum
+
+### Course Objective
 
 This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning course, as part of School of AI. This course can be taken for free on Youtube in the form of a playlist, or at School of AI for a more immersive learning experience. Reinforcement learning is driving some of the latest advances in AI, from DeepMind's AlphaGo to OpenAI's DOTA bots. Although these AIs are designed for video games, reinforcement learning is a powerful branch of AI that can be applied to endless applications in the real world. In this course, we'll cover various RL techniques in order of increasing complexity, applying them to both simulated and real world problems. Students will develop an intuition around when to use certain RL algorithms and by the end of the course will have the practical skills necessary to apply RL to a problem they are passionate about to make a positive impact in the world. 
 
@@ -51,6 +68,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 ##### Topics Covered
 ###### Markov Decision Processes, Policy Functions, Value Functions, and the Bellman Equation
 
+
 ## Week 2 - Dynamic Programming
 - Route Planning
 - Options Pricing
@@ -59,6 +77,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 
 ##### Topics Covered
 ###### Iterative Policy Evaluation, Policy improvement, Policy iteration, Value iteration
+
 
 ## Week 3 - Monte Carlo Methods
 - Interview #1
@@ -69,6 +88,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 ##### Topics Covered 
 ###### Monte Carlo prediction, Monte Carlo control, Greedy & Epsilon-Greedy Policies , Exploration vs Exploitation Dilemma
 
+
 ## Week 4 - Model-Free Learning 
 - Delivery Management
 - Automated Trading
@@ -77,6 +97,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 
 ##### Topics Covered
 ###### Temporal Difference Learning, SARSA, Q-Learning, Model vs Model Free Intuition
+
 
 ## Week 5 - Reinforcement Learning in Continuous Spaces
 - Self Driving Cars
@@ -90,6 +111,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 # Midterm Project
 - Train a bipedal humanoid robot to walk in simulation!
 
+
 ## Week 6 - Deep Reinforcement Learning 
 - Traffic Optimization
 - Gaming 
@@ -98,6 +120,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 
 ###### Topics Covered
 ###### DQN + Double DQN Networks, Dueling DQN, Prioritized Replay, Value-based Methods for Robotics
+
 
 ### Week 7 - Policy Based Methods
 - Web System Configuration
@@ -108,6 +131,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 ##### Topics Covered
 ###### Evolutionary Algorithms, Stochastic Policy Search, Policy Gradients, REINFORCE
 
+
 ## Week 8 - Policy Gradient Methods
 - Dialogue Systems
 - Photo Editing 
@@ -116,6 +140,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 
 ##### Topics Covered
 ###### Evolved Policy Gradients, Generalized Advantage Estimation (GAE), Trust Region Policy Optimization, Proximal Policy Optimization (PPO)
+
 
 ## Week 9 - Actor Critic Methods
 - Advanced Trading Techniques
@@ -126,6 +151,7 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 ##### Topics Covered
 ###### Actor Critic Algorithms, Asynchronous Advantage Actor Critic, Deep Deterministic Policy Gradients (DDPG), Bayesian Actor-Critic
 
+
 ## Week 10 - Multi Agent Reinforcement Learning
 - Move 37
 - Transportation Networks
@@ -133,7 +159,8 @@ This is the syllabus for "Move 37", Siraj Raval's free reinforcement learning co
 - The Future of AI
 
 ##### Topics Covered
-###### Cooperation, Competiton, Parallelism, Inverse Reinforcement Learning
+###### Cooperation, Competition, Parallelism, Inverse Reinforcement Learning
+
 
 # Final Project 
 - Develop a multi-agent network to solve a real world problem! 
