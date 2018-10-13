@@ -165,18 +165,18 @@ MAB is such a popular example that you will see it more often than not.
 
 - Return: the reward from our immediate action, plus all discounted future rewards from applying the current policy
 - Denoted by capital G
-- $$G_t = r_(t+1) + \gamma {G_(t+1)}$$
+- $$ G_t = r_(t+1) + \gamma {G_(t+1)} $$
 - Work in reverse from final state applying this formula
 - Once several (s, G) pairs are collected, average them to estimate the value of each state
 
 **Algorithm to Calculate Returns**:
 
 - Initialize G to 0
-- states_and_returns = []
-- Loop backwards through the list of state_and_rewards (s, r):
-    + append (s, G) to states_and_returns
+- states\_and\_returns = []
+- Loop backwards through the list of state\_and\_rewards (s, r):
+    + append (s, G) to states\_and\_returns
     + G = r + gamma * G
-- reverse states_and_returns to the original order
+- reverse states\_and\_returns to the original order
 
 **Explore/Exploit Dilemma**:
 
@@ -421,3 +421,16 @@ Look at hw03/ directory.
 
 <a id="tensor-processing-units-live-stream"></a>
 ### Tensor Processing Units (Live Stream)
+
+Google just made it really easy for anyone to use a "Tensor Processing Unit" (TPU) to train machine learning models. Their open-source research tool (Google Colab) now lets developer select a "TPU" as their run-time environment. Are TPUs the next big thing in machine learning? In this video, I'll benchmark the TPU vs the GPU, talk about what the hardware looks like, describe its use cases, then do some TPU specific live programming to train a model to do some natural language processing. Get hype!
+
+**Learning Resources**:
+
+- [Youtube Video](https://www.youtube.com/watch?v=jgNwywYcH4w)
+- [Code Link](https://github.com/llSourcell/TPU_Machine_Learning)
+- [Google's first TPU](https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu)
+- [Medium: Should we all embrace Systolic Arrays?](https://medium.com/@CPLu/should-we-all-embrace-systolic-array-df3830f193dc)
+- [Medium: Google's AI Processor's (TPU) Heart Throbbing Inspiration](https://medium.com/intuitionmachine/googles-ai-processor-is-inspired-by-the-heart-d0f01b72defe)
+- [Github: UCSBarchLab OpenTPU](https://github.com/UCSBarchlab/OpenTPU)
+- [Github: Systolic Array Python Demo](https://github.com/antonpaquin/SystolicArrayDemo/blob/master/systolic.py)
+- [Google Colab: Shakespeare with TPU and Keras Example](https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/shakespeare_with_tpu_and_keras.ipynb)
