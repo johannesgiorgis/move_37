@@ -25,6 +25,8 @@ def epsilon_action(a, eps=0.1):
   else:
     return np.random.choice(ALL_POSSIBLE_ACTIONS)
 
+
+
 def play_game(grid, policy):
   # returns a list of states and corresponding returns
   s = (2, 0)
@@ -61,6 +63,7 @@ def play_game(grid, policy):
   return states_actions_returns
 
 
+
 def monte_carlo(grid):
   # initialize a random policy
   policy = {}
@@ -93,14 +96,14 @@ def monte_carlo(grid):
     for s, a, G in states_actions_returns:
       # check if we have already seen s
       # first-visit Monte Carlo optimization
-      sa = (s, a)
-      if sa not in seen_state_action_pairs:
-        returns[sa].append(G)
+      state_action = (s, a)
+      if state_action not in seen_state_action_pairs:
+        returns[state_action].append(G)
         old_q = Q[s][a]
         # the new Q[s][a] is the sample mean of all our returns for that (state, action)
-        Q[s][a] = np.mean(returns[sa])
+        Q[s][a] = np.mean(returns[state_action])
         biggest_change = max(biggest_change, np.abs(old_q - Q[s][a]))
-        seen_state_action_pairs.add(sa)
+        seen_state_action_pairs.add(state_action)
     deltas.append(biggest_change)
 
     # calculate new policy pi(s) = argmax[a]{ Q(s,a) }
@@ -115,6 +118,7 @@ def monte_carlo(grid):
     V[s] = max_dict(Q[s])[1]
   
   return V, policy, deltas
+
 
 
 if __name__ == '__main__':
