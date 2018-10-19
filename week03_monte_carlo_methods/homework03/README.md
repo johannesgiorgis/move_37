@@ -7,4 +7,4 @@ Write a Medium blog post about your experience implementing the algorithm and wh
 
 
 # Answer
-Look at ![Homework 03 Notebook](homework03.ipynb).
+Look at [Homework 03 Notebook](homework03.ipynb).

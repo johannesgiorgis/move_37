@@ -12,7 +12,7 @@ The two techniques we looked at were Random Search and Hill Climb. Random Search
 
 Following the blog author's approach, I ran multiple iterations (10 in this case) of both algorithms. A list was used to track the number of episodes it took for the algorithm to reach the target reward of 200. The average episode was calculated from this list.
 
-After running through Random Search and seeing the randomness of the results, my initial thought was that Hill Climb would do a much better job. Surely, an algorithm that promises to iteratively improve on previous attempts vs. one that randomly picks would be better. To my dissapointment, I was proven wrong. Random Search reached the target reward of 200 faster than Hill Climb did.
+After running through Random Search and seeing the randomness of the results, my initial thought was that Hill Climb would do a much better job. Surely, an algorithm that promises to iteratively improve on previous attempts vs. one that randomly picks would be better. To my disappointment, I was proven wrong. Random Search reached the target reward of 200 faster than Hill Climb did.
 
 
 
