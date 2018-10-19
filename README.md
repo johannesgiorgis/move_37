@@ -25,6 +25,7 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Week 01 Notes: Markov Decision Processes](week01_markov_decision_processes/week01_notes.md)
 - [Week 02 Notes: Dynamic Programming](week02_dynamic_programming/week02_notes.md)
 - [Week 03 Notes: Monte Carlo Methods](week03_monte_carlo_methods/week03_notes.md)
+- [Week 04 Notes: Model Free Learning](week04_model_free_learning/week04_notes.ipynb)
 
 
 
