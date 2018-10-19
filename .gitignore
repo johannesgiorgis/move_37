@@ -5,7 +5,7 @@
 
 __pycache__/
 
-*.log
+#*.log
 
 # openai gym results/ directory
 results/
