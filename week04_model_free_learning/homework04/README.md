@@ -7,3 +7,5 @@ This weeks homework assignment is to implement Q learning from scratch for the g
 
 
 # Answer
+
+See [Homework 04 Notebook](homework04.ipynb)
