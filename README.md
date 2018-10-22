@@ -26,6 +26,7 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Week 02 Notes: Dynamic Programming](week02_dynamic_programming/week02_notes.md)
 - [Week 03 Notes: Monte Carlo Methods](week03_monte_carlo_methods/week03_notes.md)
 - [Week 04 Notes: Model Free Learning](week04_model_free_learning/week04_notes.ipynb)
+- [Week 05 Notes: RL in Continuous Spaces](week05_rl_in_continuous_spaces/week05_notes.ipynb)
 
 
 
