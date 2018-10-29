@@ -1,0 +1,106 @@
+### Additional Information 
+
+**Experiment 1**
+{'seed': 1946, 'nb_steps': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000}
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.03}
+
+Current Reward: -15.26104, Best Reward: 4.08095
+100% 200/200 [03:47<00:00, 1.76s/it]
+
+
+**Result 1**
+Current Reward: -6.47892, Best Reward: 4.02084
+
+**Experiment 2**
+{'seed': 1946, 'nb_steps': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.0}
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.0}
+
+Current Reward: -11.13726, Best Reward: -1.24874
+100% 200/200 [04:39<00:00, 1.12s/it]
+
+
+**Result 2**
+We did not let it finish, it was hilarious!  Backflip attempted, negative reward at best.
+
+**Experiment 3**
+{'seed': 1946, 'nb_steps': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.9}
+
+Current Reward: -3.08279, Best Reward: 0.48803
+100% 200/200 [02:51<00:00, 1.43it/s]i
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.9}
+
+Current Reward: -3.06576, Best Reward: 9.62691
+100% 200/200 [02:39<00:00, 1.44it/s]
+
+
+**Experiment 4**
+{'seed': 1946, 'nb_steps': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.3}
+
+Current Reward: 261.20635, Best Reward: 263.59856
+100% 200/200 [23:12<00:00, 9.94s/it]
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.3}
+
+Current Reward: 17.34349, Best Reward: 46.92564
+100% 200/200 [03:32<00:00, 1.70s/it]
+
+**Experiment 5**
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.2}
+
+Current Reward: 263.57498, Best Reward: 263.57498
+100% 200/200 [21:03<00:00, 11.83s/it]
+
+**Experiment 6**
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.5}
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+Current Reward: -3.00291, Best Reward: 2.56711
+100% 200/200 [02:16<00:00, 1.79it/s]
+
+**Experiment 7**
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.4}
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+Current Reward: -2.65901, Best Reward: 3.17229
+100% 200/200 [02:04<00:00, 1.85it/s]
+
+**Experiment 8**
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.25}
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+Current Reward: 277.28406, Best Reward: 281.36750
+100% 200/200 [22:41<00:00, 7.56s/it]
+
+**Experiment 9**
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.22}
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+Current Reward: 241.29383, Best Reward: 248.74299
+100% 200/200 [20:06<00:00, 8.81s/it]
+
+**Experiment 10**
+
+{'seed': 1946, 'num_episodes': 200, 'learning_rate': 0.3, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.22}
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+WARN: gym.spaces.Box autodetected dtype as <class 'numpy.float32'>. Please provide explicit dtype.
+Current Reward: 126.71907, Best Reward: 190.20583
+100% 200/200 [08:26<00:00, 5.13s/it]
+
+**Experiment 11**
+
+{'seed': 1946, 'num_episodes': 300, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.25}
+
+Current Reward: 273.48587, Best Reward: 276.57411
+100% 300/300 [36:06<00:00, 18.51s/it]
+
+**Experiment 12**
+{'seed': 1946, 'num_episodes': 300, 'learning_rate': 0.2, 'record_every': 50, 'episode_length': 2000, 'num_deltas': 16, 'num_best_deltas': 16, 'noise': 0.1}
+
+Current Reward: 7.70328, Best Reward: 38.39928
+100% 300/300 [05:05<00:00, 2.76s/it]
