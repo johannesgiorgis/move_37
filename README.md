@@ -31,6 +31,14 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Week 07 Notes: Policy Based Methods](week07_policy_based_methods/week07_notes.ipynb)
 
 
+### Homework Assignments
+- [Homework 01: OpenAI Gym Installation](week01_markov_decision_processes/homework01/README.md)
+- [Homework 02: Value & Policy Iteration](week02_dynamic_programming/homework02/homework02.ipynb)
+- [Homework 03: Monte Carlo](week03_monte_carlo_methods/homework03/homework03.ipynb)
+- [Homework 04: Q Learning](week04_model_free_learning/homework04/homework04.ipynb)
+- [Midterm: Make a Bipedal Robot Walk](week05_rl_in_continuous_spaces/midterm/midterm.ipynb)
+- [Homework 06: Deep Q Learning](week06_deep_reinforcement_learning/homework06/homework06.ipynb)
+
 
 <a id="course-curriculum"></a>
 ## Course Curriculum
