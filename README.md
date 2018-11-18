@@ -39,6 +39,7 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Midterm: Make a Bipedal Robot Walk](week05_rl_in_continuous_spaces/midterm/midterm.ipynb)
 - [Homework 06: Deep Q Learning](week06_deep_reinforcement_learning/homework06/homework06_cnn.ipynb)
 - [Homework 07: Neuroevolution](week07_policy_based_methods/homework07/README.md)
+- [Homework 08: Policy Gradient Methods](week08_policy_gradient_methods/homework08.homework08.ipynb)
 
 
 <a id="course-curriculum"></a>
