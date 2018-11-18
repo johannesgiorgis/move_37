@@ -37,8 +37,8 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Homework 03: Monte Carlo](week03_monte_carlo_methods/homework03/homework03.ipynb)
 - [Homework 04: Q Learning](week04_model_free_learning/homework04/homework04.ipynb)
 - [Midterm: Make a Bipedal Robot Walk](week05_rl_in_continuous_spaces/midterm/midterm.ipynb)
-- [Homework 06: Deep Q Learning](week06_deep_reinforcement_learning/homework06/homework06.ipynb)
-- [Homework 07: Neuroevolution](week07_policy_based_methods/homework07.README.md)
+- [Homework 06: Deep Q Learning](week06_deep_reinforcement_learning/homework06/homework06_cnn.ipynb)
+- [Homework 07: Neuroevolution](week07_policy_based_methods/homework07/README.md)
 
 
 <a id="course-curriculum"></a>
