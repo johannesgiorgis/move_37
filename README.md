@@ -29,6 +29,8 @@ I am attending Siraj's Move 37 course through the School of AI. This repository 
 - [Week 05 Notes: RL in Continuous Spaces](week05_rl_in_continuous_spaces/week05_notes.ipynb)
 - [Week 06 Notes: Deep Reinforcement Learning](week06_deep_reinforcement_learning/week06_notes.ipynb)
 - [Week 07 Notes: Policy Based Methods](week07_policy_based_methods/week07_notes.ipynb)
+- [Week 08 Notes: Policy Gradient Methods](week08_policy_gradient_methods/week08_notes.ipynb)
+- [Week 09 Notes: Actor-Critic Methods](week09_actor_critic_methods/week09_notes.ipynb)
 
 
 ### Homework Assignments
